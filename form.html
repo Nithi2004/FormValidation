@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style></head>
+    <body>
+        
+        <h1 >Registration Form</h1>
+        <form id="form">
+        
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"  ><br>
+            
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br>
+            
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" ><br>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" ><br>
+
+        
+
+
+            <label for="dob" >Date of Birth:</label>
+            <input type="date" id="dob" ><br>
+
+            <label for="Nationality">Nationality:</label>
+            <select id="Nationality" name="Nationality">
+            <option value="india">India</option>
+            <option value="america">America</option>
+            <option value="canada">Canada</option>
+            <option value="france">France</option>
+            <option value="none">None</option>
+            </select><br>
+
+            <hl>GENDER:</hl><br><br>
+            <input type="radio" id="html" name="gender" value="MALE">
+            <label for="MALE">MALE</label>
+            
+            
+            <input type="radio" id="css" name="gender" value="FEMALE">
+            <label for="FEMALE">FEMALE</label><br><br>
+            
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br>
+
+        
+
+          
+
+            <label for="Department">Department:</label>
+            <select id="Department" name="Department">
+            <option value="cse">CSE</option>
+            <option value="it">IT</option>
+            <option value="aiml">AIML</option>
+            <option value="aids">AIDS</option>
+            <option value="other">OTHER</option>
+            </select><br>
+
+       
+
+        <label>Select courses:</label><br>
+        <input type="checkbox" id="course1" name="courses" value="Programming in C">
+        <label for="course1">Programming in C</label><br>
+        <input type="checkbox" id="course2" name="courses" value="GIT">
+        <label for="course2">GIT</label><br>
+        <input type="checkbox" id="course3" name="courses" value="AWS">
+        <label for="course3">AWS</label><br>
+
+            
+
+            
+
+            
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+
+            
+            
+
+             <button type="button" onclick="validateForm()">Register</button>
+            </form>
+            
+             <script src="form.js"></script>
+             
+            
+
+        
+    </body>
+</html>
